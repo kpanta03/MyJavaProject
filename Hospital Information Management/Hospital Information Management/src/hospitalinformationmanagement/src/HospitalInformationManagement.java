@@ -10,7 +10,7 @@ import java.sql.Statement;
 public class HospitalInformationManagement {
     private static final String url = "jdbc:mysql://localhost:3306/hospital";
     private static final String username = "root";
-    private static final String password = "Kritikasqlaccount";
+    private static final String password = "*****************";
 
     public static void main(String[] args) {
         try{
@@ -109,7 +109,8 @@ public class HospitalInformationManagement {
         }
     }
 
-
+    
+//appointment book garni
     public static void appointment(Patient patient, Doctor doctor, Connection connect, Scanner scanner) {
 
         System.out.print("Enter Id of patient: ");
@@ -148,7 +149,7 @@ public class HospitalInformationManagement {
 
 
 
-    //
+    //sabai appointments display garni
     public static void displayAppointments(Connection connect) {
         try {
             Statement statement = connect.createStatement();
