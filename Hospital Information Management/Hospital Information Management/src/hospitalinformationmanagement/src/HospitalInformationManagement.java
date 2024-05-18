@@ -157,9 +157,9 @@ public class HospitalInformationManagement {
             ResultSet resultSet = statement.executeQuery(query);
 
             System.out.println("\t\t\tAppointments ");
-            System.out.println("*********************************************************");
-            System.out.println("* Appointment ID | Patient ID | Doctor ID |   Date      *");
-            System.out.println("*********************************************************");
+            System.out.println("*-------------------------------------------------------*");
+            System.out.println("| Appointment ID | Patient ID | Doctor ID |   Date      |");
+            System.out.println("*-------------------------------------------------------*");
 
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
@@ -168,7 +168,7 @@ public class HospitalInformationManagement {
                 String appointment_date = resultSet.getString("appointment_date");
 
                 System.out.printf("* %-14s | %-10s | %-9s | %-8s  *\n", id, patient_id, doctor_id, appointment_date);
-            System.out.println("*********************************************************");
+           System.out.println("*-------------------------------------------------------*");
             }
 
             //System.out.println("*********************************************************");
